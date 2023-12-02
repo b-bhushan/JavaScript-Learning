@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+</head>
+<style>
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+
+    body {
+        background: slategrey;
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        /* border: 0px solid black; */
+        width: 1000px;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+    #header {
+        background: rgb(48, 14, 200);
+        height: 100px;
+        color: white;
+        text-align: center;
+        padding: 2px;
+    }
+
+    #header h1 {
+        padding: auto;
+    }
+    #header.xyz{
+        /* background: rgb(5, 244, 132); */
+        color: rgb(246, 140, 11);
+    }
+    .abc{
+        color:#fff
+    }
+    #menu {
+        background: lightblue;
+    }
+
+    #menu ul {
+        margin: 0;
+        /* padding: 0; */
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu li a {
+        display: block;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
+    #menu li a:hover {
+        background-color: aqua;
+    }
+
+    #content {
+        width: 800px;
+        float: left;
+        padding: 15px;
+        box-sizing: border-box;
+        min-height: 400px;
+    }
+
+    #sidebar li {
+        list-style: none;
+        padding: 10px;
+    }
+
+    #sidebar {
+        background: lightgreen;
+        width: 200px;
+        float: right;
+        min-height: 400px;
+    }
+
+    #sidebar a {
+        list-style: none;
+        text-decoration: none;
+        color: blue;
+    }
+
+    #sidebar li:hover {
+        background-color: aqua;
+    }
+
+    #footer {
+        background: lightsalmon;
+        clear: both;
+        padding: 7px 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <div id="header" class="abc" style="border:1px solid yellow;" onclick="xyz()">
+            <h1>First Page</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a> </li>
+                <li><a href="">About</a> </li>
+                <li><a href="">Galary</a> </li>
+                <li><a href="">Contact</a> </li>
+                <li> <a href="">Basics</a> </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2> Design Basic layout</h2>
+            <img src="/image/nature.avif" alt="" width="150px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime sunt ipsa suscipit soluta atque.
+                Voluptatem hic delectus soluta animi est ad, impedit sunt nihil aperiam possimus, dolor dignissimos</p>
+            <ul class="list">
+                <li>Lorem ipsum dolor, In quaerat</li>
+                <li> sit amet consectetur adipisicing elit.</li>
+                <li>libero provident assumenda ratione dicta nisi,</li>
+                <li>obcaecati quos deleniti delectus</li>
+                <li>modi commodi neque! Cupiditate ducimus voluptas,</li>
+            </ul>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a> </li>
+                <li><a href="">About</a> </li>
+                <li><a href="">Galary</a> </li>
+                <li><a href="">Contact</a> </li>
+                <li> <a href="">Basics</a> </li>
+            </ul>
+        </div>
+        <div id="footer">
+            Designed by @abc
+        </div>
+    </div>
+    <script src="DOM.js"></script>
+</body>
+
+</html>

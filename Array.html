@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var arr=new Array("Harry",18,"Male","CSE");
+        // for(var i=0;i<4;i++){
+        //     arr[i]=prompt("Enter "+(i+1)+" Value");
+        // }
+        // // document.write("<ul>");
+        // arr[1]="Naveen";
+        // delete arr[1];
+        // arr[1]=19;
+        // document.write( arr+" <br/> ");
+
+        // for(var i=0;i<4;i++){
+        //     document.write( arr[i]+ ",  ");
+        // }
+        // document.write("</br>");
+        // // document.write("</ul>");
+
+        var arMethods = new Array("Harry", "Aman", "Ram", "Priyanka", "Aman", "Bhushan", "Raj");
+        // document.write(arMethods + "<br/>");
+        // arMethods.sort();
+        // arMethods.reverse();
+        // arMethods.pop();                   //Delete the last Value
+        // arMethods.push("I");               //Add new value at last
+        // arMethods.push("Love");
+        // arMethods.push("You");
+        // arMethods.shift();                  //Delete the first Value
+        // arMethods.unshift("Aman");          //Add new value at last
+        // var b=arMethods.concat("Rahul","Karan");  //Merge with arMethods array
+        //var b=arMethods.join("-");            //Join the element into a single string, variable b is string
+        //var b=arMethods.slice(1,4);           //Return the element between starting and last index
+        //var c=arMethods.slice(2);             //Return the element from starting to last index
+        //var d=arMethods.slice(-2);            //Return the element slicing starts from last index as -4,-3,-2,-1
+        //document.write(b+"<br/>");
+        //document.write(c+"<br/>");
+        //document.write(d+"<br/>");
+        //arMethods.splice(2,0,"Neha",'Karan');  //Add elements in given index and delete the number of element from that index
+        //arMethods.splice(2,2);                   //delete the number of element from that starting index
+
+        // var b = 0;
+        // var c = "String";
+        // var d = Array.isArray(arMethods);           //Return true or false by checking the variable
+        // var e = Array.isArray(b);
+        // var f = Array.isArray(c);
+        // document.write(d + ",  " + e + ", " + f + "<br/>");
+
+        // var b=arMethods.indexOf("Aman",2);              //Return the index of element search start from index 2 from begining
+        // var c=arMethods.indexOf("Riya");                //Return -1 because element is not present
+
+        // var b=arMethods.indexOf("Aman",1);              //Return the index of element from last and search start from index 1 from last
+
+        // var b=arMethods.includes("Raj");                 //Return the true/false as per element present or not 
+
+        // var ages = [10, 12, 22, 18, 19];
+        // // var b=ages.some(checkAdult);                      //checks for any element on the array and return true or false
+        // // var b=ages.every(checkAdult);                     //checks for evry element on the array and return true or false
+        // // var b = ages.find(checkAdult);                    //return the first element of the array which satisfy the condition
+        // // var b = ages.findIndex(checkAdult);               //return the index of first element of the array which satisfy the condition else return -1
+        // var b=ages.filter(checkAdult);                       //return new array containing all the element of the array which satisfy the condition
+        
+        // function checkAdult(age) {
+        //     return age >= 18;
+        // }
+        // document.write(b + "<br/>");
+        var a=["Aman", "Ram", "Priya", "Bhushan", "Raj"];
+        // a.toString();                                        //Convert the element to string
+        // a.valueOf();                                         //Used to print the element of an array
+        // document.write(a.valueOf() + "<br/>");
+        // a.fill("Ram")                                        //Fill all the element with a static value
+        // document.write(a + "<br/>");
+        // a.forEach(function(value,index){
+        //     document.write(index+ " : "+value+"<br/>");
+        // });
+
+        a.forEach(loop);
+        function loop(value,index){
+            document.write(index+ " : "+value+"<br/>");
+        }
+
+        // for (var i = 0; i < arMethods.length; i++) {
+        //     document.write(arMethods[i] + ",  ");
+        // }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

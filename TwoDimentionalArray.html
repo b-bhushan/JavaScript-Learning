@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var arr = new Array([1, "Ram", 2, true],
+            ['Ketan', 4, 'Bima', 5],
+            [10, 6, 'Bima', 1900],
+            ['Ketan', 4, 'Bima', 5],
+            ['Ketan', 4, 'Bima', 5],
+            ['Ketan', "Rahul", 'Bima', 8]);
+        // var arr=new Array(2,4);
+        // for(var i=0;i<2;i++){
+        //     for(var j=0;j<4;j++){
+        //         arr[i][j]=prompt("Enter "+(i+1)+","+(j+1)+" Value");
+        //     }
+        // }
+        document.write("<table border='1px' cellspacing='0'>");
+        for (var i = 0; i < arr.length; i++) {
+            document.write("<tr>");
+            for (var j = 0; j < arr[0].length; j++) {
+                document.write("<td>" + arr[i][j] + "  " + "</td>");
+            }
+            document.write("</tr>");
+           
+        }
+        document.write("</table>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

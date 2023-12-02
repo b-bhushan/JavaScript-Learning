@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a ={fname:"Bhushan",lname:" Baraik",city:"Ranchi",age:18,
+        favMovie: ["Dhoom","Sholey","Jan"],
+        sal:function(){
+            return 2500;
+        },
+        fullname: function(){
+            return this.fname+" "+this.lname;
+        },
+        living:{
+            city:"Delhi",
+            country:"India"
+        }
+    };
+    var obj ={fname:"Bhushan",lname:" Baraik",city:"Ranchi",age:18,
+        favMovie: ["Dhoom","Sholey","Jan"]}
+        // document.write(a);
+        console.log(a);
+        // document.write("<br/>");
+        document.write(a["favMovie"]);
+        document.write("<br/>");
+        document.write(a.favMovie[1]);
+        document.write("<br/>");
+        document.write(a.sal());
+        document.write("<br/>");
+        document.write(a.fullname());
+        document.write("<br/>");
+        document.write(a.living.city);
+        document.write("<br/>");
+        document.write("<br/>");
+        //for in loop in objects
+        for(key in obj){
+            document.write(key+"::  "+obj[key]+"<br/>");
+        }
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write(a.fname+",  "+a.city+",  "+a.age+",  "+a.favMovie);
+       
+        document.write("<br/>");
+        document.write("<br/>");
+        // map() in objects
+        var arr=[11,5,8,2];
+        var b=arr.map(test);
+        document.write(b);
+        function test(x)
+        {
+            return x*10;
+        }
+        document.write("<br/>");
+        document.write("<br/>");
+        //Array of objects
+        var arObj =[
+            {fname:"Bhushan",lname:"Baraik"},
+            {fname:"Aryan",lname:"Kumar"},
+            {fname:"Dinesh",lname:"Ahuja"}
+        ];
+        var c=arObj.map(test1);
+        document.write(c);
+        function test1(x)
+        {
+            return x.fname+" "+x.lname;
+        }
+   </script>
+</head>
+<body>
+    
+</body>
+</html>
